@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+    <style>
+        * {
+            font-family: arial;
+        }
+
+        .divpractice {
+            width: 900px;
+            height: 500px;
+            background-color: green;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            padding: 10px;
+            margin: 0px auto 0px auto;
+        }
+
+        .divpractice > .first {
+            width: 40%;
+            height: 200px;
+            background-color: red;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .divpractice > .second {
+            width: 40%;
+            height: 300px;
+            background-color    : blue;
+
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .divpractice > .second > button {
+            margin-right: 5px;
+            padding: 10px;
+        }  
+
+        
+    </style>
+
+    <script>
+        function hey() {
+            alert('hello')
+        }
+    </script>
+
+    <title>Document</title>
+</head>
+<body>
+    <h1>My review page</h1>
+
+    <h2>This is subtitle</h2>
+
+    <div class="divpractice">
+        <div class="first">First div</div>
+        <div class="second">
+            <button onclick="hey()">Button 1</button>
+            <button>Button 2</button>
+            <button>Button 3</button>
+        </div>
+    </div>
+</body>
+</html>
